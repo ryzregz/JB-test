@@ -1,6 +1,6 @@
-package com.marshaarts.myapplication.network;
+package com.morris.myapplication.network;
 
-import com.marshaarts.myapplication.model.UsersResponse;
+import com.morris.myapplication.model.UsersResponse;
 
 import org.json.JSONObject;
 

@@ -1,7 +1,7 @@
-package com.marshaarts.myapplication.model;
+package com.morris.myapplication.model;
 
 import com.google.gson.annotations.SerializedName;
-import com.marshaarts.myapplication.network.BaseResponse;
+import com.morris.myapplication.network.BaseResponse;
 
 public class User  extends BaseResponse {
     @SerializedName("fullname")

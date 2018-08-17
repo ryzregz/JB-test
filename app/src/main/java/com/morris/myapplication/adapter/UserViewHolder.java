@@ -1,10 +1,10 @@
-package com.marshaarts.myapplication.adapter;
+package com.morris.myapplication.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.marshaarts.myapplication.R;
+import com.morris.myapplication.R;
 
 public class UserViewHolder extends RecyclerView.ViewHolder {
 

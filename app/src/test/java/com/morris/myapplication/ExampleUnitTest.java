@@ -1,4 +1,4 @@
-package com.marshaarts.myapplication;
+package com.morris.myapplication;
 
 import org.junit.Test;
 

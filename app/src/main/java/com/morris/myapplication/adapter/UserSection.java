@@ -1,11 +1,11 @@
-package com.marshaarts.myapplication.adapter;
+package com.morris.myapplication.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.marshaarts.myapplication.R;
-import com.marshaarts.myapplication.model.User;
+import com.morris.myapplication.R;
+import com.morris.myapplication.model.User;
 
 import java.util.List;
 

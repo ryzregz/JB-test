@@ -1,10 +1,10 @@
-package com.marshaarts.myapplication.network;
+package com.morris.myapplication.network;
 
 import android.content.Context;
 import android.util.Log;
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import com.marshaarts.myapplication.app.Const;
+import com.morris.myapplication.app.Const;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

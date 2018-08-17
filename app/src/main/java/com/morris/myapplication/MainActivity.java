@@ -1,4 +1,4 @@
-package com.marshaarts.myapplication;
+package com.morris.myapplication;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -17,12 +17,14 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.marshaarts.myapplication.adapter.UserSection;
-import com.marshaarts.myapplication.model.User;
-import com.marshaarts.myapplication.model.UsersResponse;
-import com.marshaarts.myapplication.network.ApiClient;
-import com.marshaarts.myapplication.network.ApiService;
+import com.morris.myapplication.adapter.UserSection;
+import com.morris.myapplication.model.User;
+import com.morris.myapplication.model.UsersResponse;
+import com.morris.myapplication.network.ApiClient;
+import com.morris.myapplication.network.ApiService;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -207,7 +209,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                             }
                                         }
                                     }
-                                    UserSection allUsers = new UserSection("All Users",userList);
+                                    UserSection allUsers = new UserSection("List of All Users Without Duplicates",userList);
                                     sectionedRecyclerViewAdapter = new SectionedRecyclerViewAdapter();
                                     sectionedRecyclerViewAdapter.addSection(allUsers);
                                     recyclerView.setAdapter(sectionedRecyclerViewAdapter);
@@ -335,6 +337,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private SectionedRecyclerViewAdapter sectionedRecyclerViewAdapter;
         @BindView(R.id.recyclerView)
         RecyclerView recyclerView;
+        @BindView(R.id.age_layout)
+        LinearLayout age_layout;
+        @BindView(R.id.total_age)
+        TextView total_age;
         private List<User> usersList = new ArrayList<>();
         private List<User> youngUsers = new ArrayList<>();
         private List<User> youthUsers = new ArrayList<>();
@@ -393,6 +399,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                             }
                                         }
                                     }
+                                    int sum = 0;
 
                                     for (int i = 0; i < usersList.size(); i++) {
                                         User user = usersList.get(i);
@@ -406,6 +413,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                         c.setTime(parse);
                                         int age =  getAge(c.get(Calendar.YEAR),c.get(Calendar.MONTH),c.get(Calendar.DAY_OF_MONTH));
                                         Log.i("Age", String.valueOf(age));
+                                        sum +=age;
                                         if(age <= 21){
                                             youngUsers.add(usersList.get(i));
                                         }
@@ -424,6 +432,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
                                     }
+                                    age_layout.setVisibility(View.VISIBLE);
+                                    total_age.setText(String.valueOf(sum));
                                     UserSection young = new UserSection("Young Users",youngUsers);
                                     UserSection youth = new UserSection("Youth",youthUsers);
                                     UserSection old = new UserSection("Old Users",oldUsers);

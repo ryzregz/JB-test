@@ -10,5 +10,31 @@
         android:scrollbars="none"
         android:layout_margin="5dp">
     </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="8dp"
+        android:id="@+id/age_layout"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/abhaya_libre"
+            android:textStyle="bold"
+            android:text="Total Users Age:"
+            />
+        <TextView
+            android:id="@+id/total_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            android:textColor="@android:color/black"
+            android:text=""/>
+
+    </LinearLayout>
 
 </RelativeLayout>

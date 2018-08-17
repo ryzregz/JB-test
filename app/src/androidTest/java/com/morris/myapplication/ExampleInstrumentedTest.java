@@ -1,4 +1,4 @@
-package com.marshaarts.myapplication;
+package com.morris.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

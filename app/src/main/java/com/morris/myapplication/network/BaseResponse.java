@@ -1,4 +1,4 @@
-package com.marshaarts.myapplication.network;
+package com.morris.myapplication.network;
 
 public class BaseResponse {
     String error;

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/abhaya_libre"
+                android:text="Name:"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Morris Murega"
+            android:fontFamily="@font/abhaya_libre"
+            android:textColor="@android:color/black"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+         </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mm@email.com"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/email"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/18/1997"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/dob"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Town:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nairobi"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/town"
+                    android:layout_margin="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45783002"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/address"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education Level:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45783002"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/education"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driving Status:"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45783002"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/d_status"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
